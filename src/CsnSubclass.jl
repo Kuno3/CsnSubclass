@@ -1,27 +1,25 @@
 module CsnSubclass
 
 export
-    ZeroDeltaSimulator,
-    FixedDeltaSimulator,
-    TemporalDeltaSimulator,
-    SpatialDeltaSimulator,
-    LaplaceSimulator,
-    ZeroDeltaPostSampler,
-    FixedDeltaPostSampler,
-    TemporalDeltaPostSampler,
-    SpatialDeltaPostSampler,
-    LaplacePostSampler,
+    ZeroThetaSimulator,
+    FixedThetaSimulator,
+    TemporalThetaSimulator,
+    SpatialThetaSimulator,
+    ZeroThetaPostSampler,
+    FixedThetaPostSampler,
+    TemporalThetaPostSampler,
+    SpatialThetaPostSampler,
     simulate,
     sampling
 
-include("simulator/zerodelta.jl")
-include("simulator/fixeddelta.jl")
-include("simulator/temporaldelta.jl")
-include("simulator/spatialdelta.jl")
-include("postsampler/zerodelta.jl")
-include("postsampler/fixeddelta.jl")
-include("postsampler/temporaldelta.jl")
-include("postsampler/spatialdelta.jl")
+include("simulator/zerotheta.jl")
+include("simulator/fixedtheta.jl")
+include("simulator/temporaltheta.jl")
+include("simulator/spatialtheta.jl")
+include("postsampler/zerotheta.jl")
+include("postsampler/fixedtheta.jl")
+include("postsampler/temporaltheta.jl")
+include("postsampler/spatialtheta.jl")
 include("utils.jl")
 
 end
